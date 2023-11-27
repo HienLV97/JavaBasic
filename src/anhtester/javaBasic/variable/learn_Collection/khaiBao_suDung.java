@@ -35,13 +35,26 @@ public class khaiBao_suDung {
         arrT.add("JS");
     }
     public static void T3(){
-         Map<String,String> StringMap = new HashMap<>();
+         Map<String,String> StringMap = new HashMap<String,String>();
         StringMap.put("Company","FPT");
         StringMap.put("Company","Kamora");
         StringMap.put("Company","CMC");
-        System.out.println(StringMap.get("Company"));
+        StringMap.put("t1","T1");
+        System.out.println(StringMap);
+//        System.out.println(StringMap.get("Company"));
+    }
+    public static void T4(){
+        // new TreeMap() sẽ sắp xếp các phần tử dự vào key của chúng
+        Map<String, String> hashMap = new HashMap<String, String>();
+        hashMap.put("Windows", "2000");
+        hashMap.put("Windows", "XP");
+        hashMap.put("Language2", "Java");
+        hashMap.put("Language1", ".Net");
+        System.out.println("Các phần tử của Map");
+        System.out.print("\t" + hashMap);
     }
     public static void main(String[] args){
         T3();
+        T4();
     }
 }
